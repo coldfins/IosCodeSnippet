@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentHeaderView" customModule="WallPost" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6wq-5D-d85" customClass="ReplyHeaderView" customModule="WallPost" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unknown_user.png" translatesAutoresizingMaskIntoConstraints="NO" id="N0z-0j-zie">
+                    <rect key="frame" x="11" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="93Z-xX-NPN"/>
+                        <constraint firstAttribute="width" constant="40" id="yse-yK-wGl"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kca-CT-RnJ">
+                    <rect key="frame" x="11" y="10" width="40" height="40"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPK-s2-75s">
+                    <rect key="frame" x="64" y="11" width="209" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="209" id="4jx-dJ-8qZ"/>
+                        <constraint firstAttribute="height" constant="21" id="7f4-Ab-Uk7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCS-u8-bge">
+                    <rect key="frame" x="281" y="10" width="106" height="21"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="8LD-Mo-7c1"/>
+                        <constraint firstAttribute="height" constant="21" id="JjH-oz-r0S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a symbolic " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGK-Z1-nz5">
+                    <rect key="frame" x="64" y="40" width="323" height="16"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTL-f1-6Xz">
+                    <rect key="frame" x="64" y="64" width="54" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54" id="5iE-vZ-kbo"/>
+                        <constraint firstAttribute="height" constant="32" id="6Dk-DU-4fE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="0" image="unlikecount.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFq-py-WkO">
+                    <rect key="frame" x="119" y="64" width="54" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="1zp-7e-lEc"/>
+                        <constraint firstAttribute="width" constant="54" id="Eij-rM-tVk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="0" image="reply.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UTS-XM-CMd">
+                    <rect key="frame" x="63" y="105" width="328" height="2"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="B7T-hx-c2Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kca-CT-RnJ" firstAttribute="width" secondItem="N0z-0j-zie" secondAttribute="width" id="AMD-6i-mKk"/>
+                <constraint firstItem="UTS-XM-CMd" firstAttribute="top" secondItem="dFq-py-WkO" secondAttribute="bottom" constant="9" id="BNt-t1-rSg"/>
+                <constraint firstAttribute="trailing" secondItem="WCS-u8-bge" secondAttribute="trailing" constant="4" id="EgQ-oM-QaU"/>
+                <constraint firstAttribute="trailing" secondItem="nGK-Z1-nz5" secondAttribute="trailing" constant="4" id="HD3-aG-prq"/>
+                <constraint firstItem="PTL-f1-6Xz" firstAttribute="top" secondItem="nGK-Z1-nz5" secondAttribute="bottom" constant="8" id="KGK-Ut-JHn"/>
+                <constraint firstItem="kca-CT-RnJ" firstAttribute="height" secondItem="N0z-0j-zie" secondAttribute="height" id="QqQ-Jq-akj"/>
+                <constraint firstItem="kca-CT-RnJ" firstAttribute="leading" secondItem="N0z-0j-zie" secondAttribute="leading" id="SxB-a9-eTb"/>
+                <constraint firstAttribute="trailing" secondItem="UTS-XM-CMd" secondAttribute="trailing" id="TY7-8W-YPI"/>
+                <constraint firstItem="N0z-0j-zie" firstAttribute="leading" secondItem="6wq-5D-d85" secondAttribute="leading" constant="11" id="VPh-wq-U0F"/>
+                <constraint firstItem="WCS-u8-bge" firstAttribute="top" secondItem="6wq-5D-d85" secondAttribute="top" constant="10" id="ZB2-px-cJs"/>
+                <constraint firstItem="kca-CT-RnJ" firstAttribute="top" secondItem="N0z-0j-zie" secondAttribute="top" id="bJm-CL-Q1L"/>
+                <constraint firstItem="UTS-XM-CMd" firstAttribute="leading" secondItem="6wq-5D-d85" secondAttribute="leading" constant="63" id="bbD-sS-scB"/>
+                <constraint firstItem="PTL-f1-6Xz" firstAttribute="leading" secondItem="nGK-Z1-nz5" secondAttribute="leading" id="dRo-wn-SgL"/>
+                <constraint firstItem="dFq-py-WkO" firstAttribute="top" secondItem="nGK-Z1-nz5" secondAttribute="bottom" constant="8" id="du4-7L-u1n"/>
+                <constraint firstItem="nGK-Z1-nz5" firstAttribute="leading" secondItem="VPK-s2-75s" secondAttribute="leading" id="ecP-Uo-0GL"/>
+                <constraint firstItem="VPK-s2-75s" firstAttribute="leading" secondItem="N0z-0j-zie" secondAttribute="trailing" constant="13" id="fLm-tC-Ca0"/>
+                <constraint firstAttribute="bottom" secondItem="UTS-XM-CMd" secondAttribute="bottom" constant="2" id="gn7-uU-QAg"/>
+                <constraint firstItem="kca-CT-RnJ" firstAttribute="firstBaseline" secondItem="VPK-s2-75s" secondAttribute="firstBaseline" id="i2c-Et-KXv"/>
+                <constraint firstItem="dFq-py-WkO" firstAttribute="leading" secondItem="PTL-f1-6Xz" secondAttribute="trailing" constant="1" id="jJT-HV-i3z"/>
+                <constraint firstItem="VPK-s2-75s" firstAttribute="top" secondItem="6wq-5D-d85" secondAttribute="top" constant="11" id="mhF-lf-CBZ"/>
+                <constraint firstItem="WCS-u8-bge" firstAttribute="leading" secondItem="VPK-s2-75s" secondAttribute="trailing" constant="8" id="rju-Kc-a1U"/>
+                <constraint firstItem="UTS-XM-CMd" firstAttribute="top" secondItem="PTL-f1-6Xz" secondAttribute="bottom" constant="9" id="w9m-td-Bqp"/>
+                <constraint firstItem="N0z-0j-zie" firstAttribute="top" secondItem="6wq-5D-d85" secondAttribute="top" constant="10" id="z48-1r-B4T"/>
+                <constraint firstItem="nGK-Z1-nz5" firstAttribute="top" secondItem="VPK-s2-75s" secondAttribute="bottom" constant="8" id="zgW-y0-V6y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLike" destination="PTL-f1-6Xz" id="3jV-o0-EaU"/>
+                <outlet property="btnReply" destination="dFq-py-WkO" id="dRB-Wq-yul"/>
+                <outlet property="btnUser" destination="kca-CT-RnJ" id="ynF-Zr-ntC"/>
+                <outlet property="imgUserProfile" destination="N0z-0j-zie" id="w01-ru-Ryr"/>
+                <outlet property="lblCommentText" destination="nGK-Z1-nz5" id="Iyu-g3-X5B"/>
+                <outlet property="lblTime" destination="WCS-u8-bge" id="SaP-Nt-8Lg"/>
+                <outlet property="lblUserName" destination="VPK-s2-75s" id="t43-XI-7Ac"/>
+            </connections>
+            <point key="canvasLocation" x="-178.5" y="-26.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reply.png" width="20" height="20"/>
+        <image name="unknown_user.png" width="40" height="40"/>
+        <image name="unlikecount.png" width="20" height="20"/>
+    </resources>
+</document>
