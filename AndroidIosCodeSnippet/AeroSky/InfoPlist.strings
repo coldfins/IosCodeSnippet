@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+  Stacks
+
+  Created by Keith Harrison on 04/10/2015.
+  Copyright © 2015 Keith Harrison. All rights reserved.
+*/
+
+shortcutTitleFavorites = "Favourites";
+shortcutSubtitleFavorites = "What you like";
+
+shortcutTitleFeatured = "Requirements";
+shortcutSubtitleFeatured = "What is your requirements";
+
+shortcutTitleTopRated = "Search";
+shortcutSubtitleTopRated = "Search for your property";
